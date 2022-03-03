@@ -77,16 +77,17 @@ export default function Home() {
       <div className={stylesIndex.movie_search_results_grid}>
         
         {searchResults.map((each, index) => {
-          {searchResults.length}
           return(
-            
-            <Movie 
+            <div key = {index}>
+              <Movie
               
               index = {each.id}
               title = {each.title}
               poster_path = {each.poster_path}
               overview = {each.overview}
             />
+            </div>
+            
           )
         })}
       </div>
