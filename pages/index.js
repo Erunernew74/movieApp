@@ -56,7 +56,7 @@ export default function Home() {
         {/* <h1>
           <Movie titolo = 'Lista dei film' />
         </h1> */}
-        <h1>Movie App</h1>
+        <h1>Movie App heroku</h1>
         <Row className='fluid'>
           <Col md={6} className="md-auto">
             <form classsName={stylesIndex.search_form} onSubmit={search}>
