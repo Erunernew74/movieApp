@@ -21,9 +21,12 @@ export default function Home() {
   //   setSearchResults(initialData.trendingMovies.results)
   // }, [setSearchResults])
 
+  // https://api.themoviedb.org/3/trending/all/day?api_key=36efc68a193b802e2257db65d00f6cc7
+
+
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=36efc68a193b802e2257db65d00f6cc7`)
+      const res = await fetch(`https://dashboard.heroku.com/apps/proxyservermovieapp`)
       const data = await res.json()
       setSearchResults(data.results)
     }
